@@ -15,7 +15,7 @@ let vetorUsers = []
 
 
 
-const images = ["./img sa sky/img2.png","./img sa sky/img3.jpg","./img sa sky/img4.jfif","./img sa sky/img5.png","./img sa sky/img6.png","./img sa sky/img7.jpg","./img sa sky/img1.jfif"];
+const images = ["../img sa sky/img2.png","../img sa sky/img3.jpg","../img sa sky/img4.jfif","../img sa sky/img5.png","../img sa sky/img6.png","../img sa sky/img7.jpg","../img sa sky/img1.jfif"];
 
   let carrousel = document.getElementById("imgs");
 
