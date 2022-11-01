@@ -15,7 +15,7 @@ let vetorUsers = []
 
 
 
-const images = ["./img sa sky/img2.png","./img sa sky/img3.jpg","./img sa sky/img4.jfif","./img sa sky/img5.png","./img sa sky/img6.png","./img sa sky/.jpg"];
+const images = ["./img sa sky/img2.png","./img sa sky/img3.jpg","./img sa sky/img4.jfif","./img sa sky/img5.png","./img sa sky/img6.png","./img sa sky/img7.jpg","./img sa sky/img1.jfif"];
 
   let carrousel = document.getElementById("imgs");
 
@@ -27,7 +27,26 @@ const images = ["./img sa sky/img2.png","./img sa sky/img3.jpg","./img sa sky/im
     } else {
       i = 0;
     }
-  }, 3000);
+  }, 1500);
+
+
+function trocaDiv(){
+let login = document.getElementById("login")
+let cadastro = document.getElementById("cadastro")
+
+    if(login.style.display == "none"){
+        login.style.display = "flex"
+        cadastro.style.display = "none"
+    }else{
+        cadastro.style.display = "flex"
+        login.style.display = "none"
+    }
+
+
+}
+
+
+
 
 
 function Cadastrar(){

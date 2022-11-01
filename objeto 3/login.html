@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="login.css">
-    <title>Login</title>
+    <title>Login2</title>
 </head>
 
     <body >
     
         <div class="container">
-            <div class="concerta">
             <div class="loginContainer">
-                <div class="login">
+                <div class="concerta">
+                <div class="login" id="login">
                     <form class="loginForm" onsubmit="Logar()">
                         <h1 class="loginTitle"> Login</h1>
                         <input class= "loginInput" id="loginNome" type="text" required="" placeholder="nome do usuario"> 
@@ -28,13 +28,31 @@
                     </div>
                     
                     <button class="loginBut" type="submit" >Entrar</button><br>
-                    <a href="cadastro.html"><label>Ainda não possui conta?<br>clique aqui para cadastro!</label></a>
-                </form>
-            </div>    
-            <div class="caracol"> <img id="imgs" src="./img sa sky/img1.jfif">
+                    <a href="#" onclick="trocaDiv();"><label>Ainda não possui conta?<br>clique aqui para cadastro!</label></a>
+                    </form>
+                </div> 
+
+
+
+
+                <div class="cadastro" id="cadastro">
+                    <div class="cadastroContainer">
+                        <form class="cadastroForm">
+                                    <h1 class="cadastroTitle">Cadastro</h1>
+                                    <input class="cadastroInput" id="inputUser" placeholder="nome do usuario"> 
+                                    <span class="cadastro__input-borderl"></span>
+                                    <input class="senhaInp" id="inputPass" type="Password" placeholder="senha">
+                                    <span class="cadastro__input-borders"></span>
+                                    <button class="button" onclick="Cadastrar()">Cadastrar</button><br>
+                                    <a href="#" onclick="trocaDiv();"><label>Ja possuo conta!</label></a>
+                        </form>
+                    </div>
+                </div>    
+            
+                    <div class="caracol"> <img id="imgs" src="./img sa sky/img1.jfif">
+                    </div>
+                </div>        
             </div>
-            </div>
-        </div>        
         </div>
           
         <script src="file.js"></script>  

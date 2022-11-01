@@ -13,9 +13,9 @@ body {
   justify-content: center;
   align-items: center;
   display: flex;
-  border: 50px;
   height: 100%;
   width: 100%;
+  
 }
 .container{
   overflow: hidden;
@@ -27,10 +27,9 @@ body {
   background: linear-gradient(to bottom left,#09bb18,#2c1bc7) !important;
 }
 .loginContainer {
-  border-radius: 50%;
   height: 70%;
   width: 70%;
-
+  
   display: flex;
   justify-content: center; 
   flex-direction: row;
@@ -40,10 +39,12 @@ body {
   height: 100%;
 }
 #imgs{
+  border-radius: 0px 9px 9px 0px;
   height: 100%;
   width: 100%;
 }
 .login {
+  border-radius: 9px 0px 0px 9px;
   height: 100%;
   width: 30%;
   background-color:rgb(255, 255, 255) ;
@@ -136,4 +137,109 @@ body {
 .chekc {
 
 padding: 0 20px;
+}
+
+
+
+.cadastro {
+  
+  border-radius: 9px 0px 0px 9px;
+  height: 100%;
+  width: 30%;
+  background-color:rgb(255, 255, 255) ;
+  box-sizing: border-box;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+.cadastroContainer {
+  border-radius: 9px 0px 0px 9px;
+  height: 70%;
+  width: 70%;
+  background-color:rgb(255, 255, 255) ;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cadastroForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cadastroTitle {
+  margin-bottom: 32px;
+  color: rgb(0, 0, 0);
+}
+.cadastroInput {
+  height: 48px;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 8px;
+  border: unset;
+  outline: none;
+  position: relative;
+}
+.senhaInp {
+  height: 48px;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 8px;
+  border: unset;
+  outline: none;
+  position: relative;
+}
+.cadastro__input-borderl{
+  height: 1px;
+  width: 100%;
+  margin-bottom: 16px;
+  background: linear-gradient(120deg,#2c1bc7,#09bb18);
+  transition: .3s ease-in-out;
+}
+.cadastro__input-borders {
+  height: 1px;
+  width: 100%;
+  margin-bottom: 16px;
+  background: linear-gradient(120deg,#2c1bc7,#09bb18);
+  transition: .3s ease-in-out;
+}
+.cadastro__input-borders ::after{
+  content: '';
+  display: block;
+  height: 1px;
+  width: 0;
+  margin-bottom: 16px;
+  background: linear-gradient(120deg,#2c1bc7,#09bb18);
+  transition: .3s ease-in-out;
+}
+.button {
+  height: 48px;
+  width: 100%;
+  padding-left: 8px;
+  outline: none;
+  position: relative;
+  background: linear-gradient(120deg,#2c1bc7,#09bb18);
+  background-size: 200%;
+  margin-bottom: 32px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  border: unset;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.button:disabled {
+  background: var(--button-disabled);
+  cursor: not-allowed;
+}
+
+.button:hover {
+  background-position: right;
+}
+
+.button.success {
+  background: var(--button-success);
 }
