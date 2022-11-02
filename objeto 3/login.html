@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,8 +27,19 @@
                     <span class="senha__input-border"></span>
                 
                     <div class="chekc">
-                        <input type="radio" id="checkBox"> Professor </input>
-                        <input type="radio" id="checkBox"> Aluno </input> <br><br>
+                        <form action="#">
+                        <p>
+                            <label>
+                              <input type="checkbox" class="filled-in"/>
+                              <span>funcionario</span>
+                            </label>
+                            <label>
+                              <input type="checkbox" class="filled-in"/>
+                              <span>aluno</span>
+                            </label>
+                          </p>
+                        </form>
+                        
                     </div>
                     
                     <button class="loginBut" type="submit" >Entrar</button><br>
@@ -56,6 +71,8 @@
         </div>
           
         <script src="file.js"></script>  
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+    
         
    
     
